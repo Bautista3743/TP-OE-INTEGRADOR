@@ -2,8 +2,8 @@
 Chatbot para la Automatización de Solicitudes de Vacaciones
 Trabajo Práctico Integrador – Organización Empresarial
 Integrantes
-Bautista XXXXX
-Bruno XXXXX
+Bautista Mariani
+Bruno Gatti
 Descripción
 
 Este proyecto corresponde al Trabajo Práctico Integrador de la materia Organización Empresarial de la Tecnicatura Universitaria en Programación.

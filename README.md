@@ -36,7 +36,6 @@ TP-OE-INTEGRADOR/
 ├── Informe_TPI.pdf
 ├── BPMN_AS_IS.png
 ├── BPMN_TO_BE.png
-└── Capturas/
 Funcionamiento
 El usuario ejecuta el programa.
 Ingresa su número de legajo.

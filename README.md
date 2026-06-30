@@ -1,49 +1,107 @@
 # TP-OE-INTEGRADOR
-TPI - Organización Empresarial
+Chatbot para la Automatización de Solicitudes de Vacaciones
+Trabajo Práctico Integrador – Organización Empresarial
+Integrantes
+Bautista XXXXX
+Bruno XXXXX
+Descripción
 
-Automatización del Proceso de Solicitud de Vacaciones mediante Chatbot
+Este proyecto corresponde al Trabajo Práctico Integrador de la materia Organización Empresarial de la Tecnicatura Universitaria en Programación.
 
-Objetivo
+El objetivo consiste en analizar un proceso administrativo real utilizando herramientas de análisis organizacional y desarrollar una propuesta de mejora mediante la automatización del proceso de solicitud de vacaciones de la empresa ficticia TecnoMarket S.A.
 
-Automatizar el proceso de solicitud de vacaciones mediante un chatbot que valide información, consulte una base de datos simulada y registre solicitudes.
+La solución implementada consiste en un chatbot desarrollado en Python que permite validar el legajo del empleado, consultar automáticamente el saldo de días disponibles y aprobar o rechazar solicitudes de vacaciones según las reglas de negocio establecidas.
 
-Tecnologías Utilizadas
-
-- Python
-- Pandas
-- OpenPyXL
-- BPMN 2.0
-- GitHub
-
-Estructura del Proyecto
-
-TPI/
+Objetivos
+Analizar el proceso actual de solicitud de vacaciones.
+Aplicar la Teoría General de Sistemas (TGS).
+Modelar el proceso utilizando BPMN 2.0.
+Automatizar el proceso mediante un chatbot.
+Implementar reglas de negocio.
+Simular una base de datos utilizando Excel.
+Validar el funcionamiento mediante casos de prueba.
+Documentar el proyecto siguiendo criterios académicos.
+Tecnologías utilizadas
+Python 3
+OpenPyXL
+Microsoft Excel
+BPMN 2.0
+Git y GitHub
+Estructura del proyecto
+TP-OE-INTEGRADOR/
+│
 ├── chatbot_vacaciones.py
 ├── empleados.xlsx
 ├── README.md
-├── BPMN_ASIS.png
-├── BPMN_TOBE.png
-└── Informe.pdf
+├── Informe_TPI.pdf
+├── BPMN_AS_IS.png
+├── BPMN_TO_BE.png
+└── Capturas/
+Funcionamiento
+El usuario ejecuta el programa.
+Ingresa su número de legajo.
+El sistema verifica que exista.
+Consulta automáticamente el saldo de vacaciones.
+Solicita la cantidad de días.
+Valida la información ingresada.
+Aprueba o rechaza la solicitud.
+Actualiza automáticamente el saldo disponible.
+Reglas de negocio
+El legajo debe existir.
+El saldo debe ser mayor que cero.
+La cantidad solicitada debe ser positiva.
+No es posible solicitar más días de los disponibles.
+Si la solicitud es aprobada, el saldo se actualiza automáticamente.
+Robustez
 
-Base de Datos Simulada
+El simulador contempla distintos escenarios de error:
 
-El archivo "empleados.xlsx" contiene:
+Legajo inexistente.
+Legajo con formato inválido.
+Cantidad negativa.
+Cantidad igual a cero.
+Solicitud superior al saldo disponible.
+Empleado sin días disponibles.
 
-Legajo| Nombre| Días Disponibles
-1001| Juan Pérez| 15
-1002| Ana Gómez| 5
-1003| Pedro Ruiz| 0
-1004| María López| 20
+Estas validaciones permiten mantener la integridad de la información y garantizar un funcionamiento estable.
 
-Flujo del Sistema
+Ejecución
 
-1. El usuario ingresa su legajo.
-2. El sistema valida la existencia del empleado.
-3. Consulta los días disponibles.
-4. Solicita la cantidad de días.
-5. Aprueba o rechaza la solicitud.
-6. Actualiza el saldo disponible.
+Instalar las dependencias:
 
-Autor
+pip install openpyxl
 
-Alumno de la Tecnicatura Universitaria en Programación a Distancia.
+Ejecutar el programa:
+
+python chatbot_vacaciones.py
+Control de versiones
+
+El proyecto se encuentra alojado en GitHub para facilitar el control de versiones y el trabajo colaborativo.
+
+Durante el desarrollo se utilizó Git para registrar la evolución del proyecto y mantener una copia segura del código y de la documentación.
+
+Seguridad
+
+Para la autenticación con GitHub se recomienda utilizar Personal Access Tokens (PAT) en lugar de contraseñas, ya que permiten asignar permisos específicos, mejorar la seguridad y reducir el riesgo de accesos no autorizados.
+
+Uso de Inteligencia Artificial
+
+Durante el desarrollo se emplearon herramientas de Inteligencia Artificial Generativa como apoyo para el análisis del proceso, la elaboración de documentación y la generación de propuestas iniciales de código.
+
+Todas las respuestas obtenidas fueron revisadas, verificadas y adaptadas manualmente para cumplir con los requisitos del proyecto y con las observaciones realizadas por la cátedra.
+
+Estado del proyecto
+
+Versión 2.0 – Entrega corregida
+
+Se incorporaron las mejoras solicitadas por la docente:
+
+Aplicación de la Teoría General de Sistemas.
+Diagramas BPMN AS-IS y TO-BE.
+Diccionario de Datos.
+Manual de Usuario.
+Casos de prueba.
+Documentación de robustez.
+Explicación del uso de IA.
+Trazabilidad del desarrollo.
+Documentación sobre GitHub y Personal Access Token (PAT).
